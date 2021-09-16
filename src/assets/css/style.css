@@ -1,0 +1,138 @@
+@import "/assets/fonts/exo2.css";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red: #E12D2C;
+    --black: #1F1F27;
+    --darck-blue: #15151E;
+    --gray: #38383F;
+    --light-gray: #B8B8BB;
+    --bg-gray: #F7F4F1;
+}
+
+body {
+    max-width: 1180px;
+    margin: 0 auto;
+    font-family: 'Exo2';
+    color: var(--black);
+    background-color: var(--bg-gray);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.pilot__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pilot__header {
+    font-size: 56px;
+}
+
+.pilot__item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    /* padding: 35px; */
+    /* display: flex; */
+    border-radius: 20px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin: 15px 0;
+    width: 31%;
+}
+
+.pilot__fio-country {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.pilot__name {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.pilot__surname {
+    font-size: 26px;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pilot__country img {
+    height: 30px;
+    border-radius: 5px;
+    width: auto;
+    object-fit: cover;
+    border: 1px solid var(--light-gray);
+}
+
+.pilot__team {
+    transition-duration: 3s;
+    padding: 15px 25px;
+    /* width: 40%; */
+    /* text-align: right; */
+    /* min-height: 150px; */
+    /* height: calc(100% - 45px); */
+    /* background-size: cover; */
+    /* padding: 25px 0px 25px 25px;
+    -webkit-clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0% 100%); */
+}
+
+
+/* .pilot__team-label {
+    background-color: var(--red);
+    color: white;
+    margin-left: auto;
+    padding: 8px 20px;
+    width: fit-content;
+    -webkit-clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
+} */
+
+.pilot__photo {
+    display: flex;
+    justify-content: end;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pilot__photo img {
+    border-radius: 20px;
+    width: 205px;
+    height: auto;
+    /* object-fit: cover; */
+}
+
+
+/* Animation */
+
+.pilot__item:hover {
+    /* transition-duration: 0.5s; */
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+/* Mobile */
+
+@media screen and (max-width:475px) {
+    body {
+        padding: 0 15px;
+    }
+    .pilot__item {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
